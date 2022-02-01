@@ -4,30 +4,38 @@
 
 body,
 html {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
-.main {
+body {
   background-image: url("/ressources/images/consigne-chantier.jpg");
   background-repeat: no-repeat;
-  background-color: black;
-  position: relative;
-  height: 1024px;
-  width: auto;
-  display: grid;
-  grid-template: repeat(4, 200px) / repeat(6, 1fr);
+}
+.main {
+  background-color: rgb(7, 206, 189);
+  height: 1000px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px;
 }
 
-.box {
-  width: 600px;
-  height: 900px;
-  grid-area: 2/1/3/4;
+.sarl_asyr_description {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 h1 {
   font-size: 70px;
   color: #fa6400;
-  height: 119px;
+  height: auto;
   width: 600px;
+  height: 100px;
+
   text-align: center;
 }
 
@@ -47,39 +55,63 @@ i {
 }
 .p-description {
   width: 480px;
-  height: 300px;
-  text-align: right;
+  height: 200px;
+  text-align: justify;
   color: rgb(249, 250, 250);
   font-size: 1.5em;
 }
 
 h2 {
-  width: 1000px;
+  height: 100px;
+  width: 500px;
   padding: 30px;
   font-size: 72px;
   color: #fa6400;
-  grid-area: 1/2/1/6;
+  text-align: center;
 }
-.contact {
+.contact_asyr {
   width: 700px;
   height: 200px;
   color: rgb(244, 245, 245);
   font-size: 1.5em;
-  grid-area: 3/1/5/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.contact p {
+.phone_asyr p {
+  font-size: 2em;
   text-align: center;
   width: 500px;
   padding-left: 20px;
 }
 
-.contact ul {
-  list-style-type: none;
+.phone_asyr {
+  width: 300px;
+  height: 400px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
+}
+.adress_asyr {
+  font-size: 2em;
+  width: auto;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.adress_asyr a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.adress_asyr a:hover {
+  text-decoration: underline;
+  color: #fa6400;
 }
 
 .icon-mobile {
